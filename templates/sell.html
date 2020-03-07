@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <h3>Add some swag for students to buy</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
+{% endblock %}
