@@ -1,0 +1,35 @@
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+
+{% block body %}
+<div id='carouselControl' class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        {% for game in games %}
+        <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}">
+            <a href="/{{ game.slug }}">
+                <img class="d-block w-100 carousel-image" src="https://c.bonfireassets.com/thumb/design-image/fbcb107f-7eb6-4910-83d0-a6ac23d1ee91/43a2b2d0-bf80-4c26-866f-e65afacf03a6/?size=900" alt="First slide">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselControl" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselControl" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row products-grid">
+    {% for game in games %}
+    <div class="col text-center">
+        <a href="/{{ game.slug }}">
+            <img class="product-img" src="https://c.bonfireassets.com/thumb/design-image/fbcb107f-7eb6-4910-83d0-a6ac23d1ee91/43a2b2d0-bf80-4c26-866f-e65afacf03a6/?size=900">
+            <h4>{{ game.title }}</h4>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
