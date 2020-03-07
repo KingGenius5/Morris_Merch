@@ -13,7 +13,7 @@ SECRET_KEY = 'i(k_0!$xogrtl)ter-nis2-!)s#(r(fvy-+feu!^3gb4q%eif4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'testing.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'morris-merch.herokuapp.com']
 
 
 # Application definition
