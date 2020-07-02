@@ -1,7 +1,5 @@
 [My Proposal](proposal.md)
 
-[Heroku Link](https://morris-merch.herokuapp.com/)
-
 # Morris Merch
 
 This web app is meant to be a store for my high school where they can buy spirit-wear and merch. It evolved into a video game tradestop
